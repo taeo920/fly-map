@@ -1,0 +1,32 @@
+.spot {
+    &__name {
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+    }
+
+    &__description {
+        margin-bottom: 1rem;
+    }
+
+    &__video {
+        border-radius: 1rem;
+        overflow: hidden;
+        display: block;
+        position: relative;
+
+        &:after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            border-left: 3rem solid transparent;
+            border-right: 3rem solid transparent;
+            border-top: 5rem solid #000;
+            opacity: 0.5;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-90deg);
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.list {
+    --spacing: 2rem;
+
+    background: white;
+    box-shadow: 0 0 2rem rgba( 0, 0, 0, 0.25 );
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing);
+    overflow-y: auto;
+    padding: var(--spacing);
+    width: 60rem;
+    z-index: 999;
+
+    > *:not(:last-child) {
+        border-bottom: 1px solid $color-border;
+        padding-bottom: var(--spacing);
+    }
+}

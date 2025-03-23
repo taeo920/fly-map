@@ -1,0 +1,16 @@
+html {
+    font-size: 62.5%;                                   // Ensures 1rem = 10px
+}
+
+body {
+    margin: 0;
+    background-color: $color-background;
+    color: $color-body;
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    font-weight: $font-weight-base;
+    line-height: $line-height-base;
+    -webkit-text-size-adjust: 100%;                     // Prevent adjustments of font size after orientation changes in iOS
+    -ms-text-size-adjust: 100%;                         // Prevent adjustments of font size after orientation changes in IE on Windows Phone
+    -ms-overflow-style: scrollbar;                      // Setting @viewport causes scrollbars to overlap content in IE11 and Edge, so we force a non-overlapping, non-auto-hiding scrollbar to counteract
+}

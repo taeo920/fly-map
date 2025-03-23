@@ -1,0 +1,19 @@
+@mixin margin-vertical( $top, $bottom: $top ) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+@mixin padding-vertical( $top, $bottom: $top ) {
+    padding-top: $top;
+    padding-bottom: $bottom;
+}
+
+@mixin margin-horizontal( $left, $right: $left ) {
+	margin-left: $left;
+    margin-right: $right;
+}
+
+@mixin padding-horizontal( $left, $right: $left ) {
+	padding-left: $left;
+    padding-right: $right;
+}
